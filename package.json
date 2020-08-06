@@ -1,0 +1,22 @@
+{
+  "name": "node-evaluation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newton-School/Node-Evaluation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Newton-School/Node-Evaluation/issues"
+  },
+  "homepage": "https://github.com/Newton-School/Node-Evaluation#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
