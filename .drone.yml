@@ -8,4 +8,5 @@ steps:
   - npm install
   - npm test
   - git clone git@github.com:unsortedArray/TestCases1.git
-  - mocha TestCases1/test.js --exit
+  - cd TestCases1
+  - mocha  --exit
