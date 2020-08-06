@@ -7,6 +7,8 @@ steps:
   commands:
   - npm install
   - node index.js
+  
+---
 
 kind: pipeline
 name: newman-test
