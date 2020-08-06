@@ -6,14 +6,14 @@ steps:
   image: node
   commands:
   - npm install
-  - npm install -g newman
   - node index.js
-  
+
 kind: pipeline
 name: newman-test
 steps:
-- name: test
+- name: testNewman
   image: node
   commands: 
+  - npm install -g newman
   - newman --version
   - newman run NS-Node-Eval.postman_collection.json
