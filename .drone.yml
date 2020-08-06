@@ -8,5 +8,12 @@ steps:
   - npm install
   - npm install -g newman
   - node index.js
+  
+kind: pipeline
+name: newman-test
+steps:
+- name: test
+  image: node
+  commands: 
   - newman --version
   - newman run NS-Node-Eval.postman_collection.json
