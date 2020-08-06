@@ -12,3 +12,4 @@ steps:
   - npm -g install chai
   - npm -g install chai-http
   - mocha --version
+  - mocha test.js --exit
