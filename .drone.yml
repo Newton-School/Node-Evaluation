@@ -6,7 +6,6 @@ steps:
   image: node
   commands:
   - npm install
-  - npm test
   - git clone git@github.com:unsortedArray/TestCases1.git
   - cd TestCases1
   - mocha  --exit
