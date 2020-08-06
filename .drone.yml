@@ -6,4 +6,5 @@ steps:
   image: node
   commands:
   - npm install
-  - node index.js
+  - npm install -g newman
+  - newman --version
