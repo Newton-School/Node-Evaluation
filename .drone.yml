@@ -6,14 +6,4 @@ steps:
   image: node
   commands:
   - npm install
-
----
-
-kind: pipeline
-name: newman-test
-steps:
-- name: testNewman
-  image: node
-  commands: 
-  - npm install -g newman
   - npm test
