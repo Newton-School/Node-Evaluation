@@ -8,7 +8,7 @@ steps:
   - npm install
   - git clone https://github.com/unsortedArray/TestCases1.git
   - cd TestCases1
-  - npm intall mocha
+  - npm install mocha
   - npm install chai
   - npm install chai-http
   - npm install
