@@ -8,3 +8,4 @@ steps:
   - npm install
   - npm install -g newman
   - newman --version
+  - newman run NS-Node-Eval.postman_collection.json
