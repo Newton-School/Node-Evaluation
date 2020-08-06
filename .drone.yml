@@ -7,5 +7,6 @@ steps:
   commands:
   - npm install
   - npm install -g newman
+  - node index.js
   - newman --version
   - newman run NS-Node-Eval.postman_collection.json
