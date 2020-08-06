@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "newman run NS-Node-Eval.postman_collection.json"
+    "test": " mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/Newton-School/Node-Evaluation#readme",
   "dependencies": {
+    "chai-http": "^4.3.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
   }
 }
