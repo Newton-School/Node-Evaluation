@@ -12,7 +12,6 @@ steps:
       - npm -g install chai
       - npm -g install chai-http
       - npm -g install mochawesome
-      - mocha test.js --reporter dot
       - mocha test.js --reporter mochawesome --exit
   - name: result
     image: node
