@@ -7,10 +7,9 @@ steps:
   commands:
   - npm install
   - git clone https://github.com/unsortedArray/TestCases1.git
-  - ls -a
   - cd TestCases1
   - npm install -g mocha
   - npm -g install chai
   - npm -g install chai-http
-  - mocha --version
-  - mocha test.js --exit
+  - npm -g install mochawesome
+  - mocha test.js --reporter mochawesome --exit
