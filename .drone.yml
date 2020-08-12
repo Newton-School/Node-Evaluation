@@ -12,6 +12,6 @@ steps:
   - npm -g install chai
   - npm -g install chai-http
   - npm -g install mochawesome
-  - mocha test.js --reporter dot --exit
-  - mocha test.js --reporter mochawesome --exit
+  - mocha test.js --reporter dot 
+  - mocha test.js --reporter mochawesome 
   - cat /drone/src/TestCases1/mochawesome-report/mochawesome.json
