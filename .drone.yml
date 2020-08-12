@@ -2,16 +2,19 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
-  image: node
-  commands:
-  - npm install
-  - git clone https://github.com/unsortedArray/TestCases1.git
-  - cd TestCases1
-  - npm install -g mocha
-  - npm -g install chai
-  - npm -g install chai-http
-  - npm -g install mochawesome
-  - mocha test.js --reporter dot 
-  - mocha test.js --reporter mochawesome 
-  - cat /drone/src/TestCases1/mochawesome-report/mochawesome.json
+  - name: test
+    image: node
+    commands:
+      - npm install
+      - git clone https://github.com/unsortedArray/TestCases1.git
+      - cd TestCases1
+      - npm install -g mocha
+      - npm -g install chai
+      - npm -g install chai-http
+      - npm -g install mochawesome
+      - mocha test.js --reporter dot
+      - mocha test.js --reporter mochawesome --exit
+  - name: result
+    image: node
+    commands:
+      - cat /drone/src/TestCases1/mochawesome-report/mochawesome.json
