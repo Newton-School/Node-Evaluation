@@ -14,3 +14,4 @@ steps:
   - npm -g install mochawesome
   - mocha test.js --reporter mochawesome --exit
   - cat /drone/src/TestCases1/mochawesome-report/mochawesome.json
+  - mocha test.js --reporter dot --exit
